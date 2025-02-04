@@ -58,7 +58,7 @@
     let buttonHeight = 48; // Starting height in pixels
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
-      const imagePaths = [
+    const imagePaths = [
       "./images/image1.gif",
       "./images/image2.gif",
       "./images/image3.gif",
@@ -72,21 +72,21 @@
       if (noClickCount < 5) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
-        buttonHeight += 40; // Increase height by 5px on each click
-        buttonWidth += 40;
-        fontSize += 35; // Increase font size by 1px on each click
+        buttonHeight += 35; // Increase height by 5px on each click
+        buttonWidth += 35;
+        fontSize += 25; // Increase font size by 1px on each click
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "baby please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
+          noButton.textContent = ["no", "are you sure?", "baby please?", "don't do this to me :(", "you're breaking my heart", "ur bby luwi gonna cry..."][noClickCount];
         }
       }
     });
   
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './images/image7.gif'; // Change to image7.gif
-      valentineQuestion.textContent = "Yayyy!! hehehe"; // Change the question text
+      valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
     });
